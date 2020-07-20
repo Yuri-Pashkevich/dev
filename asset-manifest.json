@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dev/static/css/main.98504c1b.chunk.css",
+    "main.js": "/dev/static/js/main.7cfb8cde.chunk.js",
+    "main.js.map": "/dev/static/js/main.7cfb8cde.chunk.js.map",
+    "runtime-main.js": "/dev/static/js/runtime-main.109066a9.js",
+    "runtime-main.js.map": "/dev/static/js/runtime-main.109066a9.js.map",
+    "static/js/2.644be4e5.chunk.js": "/dev/static/js/2.644be4e5.chunk.js",
+    "static/js/2.644be4e5.chunk.js.map": "/dev/static/js/2.644be4e5.chunk.js.map",
+    "index.html": "/dev/index.html",
+    "precache-manifest.7c67fd21be889cff9a4e94e1cff83de5.js": "/dev/precache-manifest.7c67fd21be889cff9a4e94e1cff83de5.js",
+    "service-worker.js": "/dev/service-worker.js",
+    "static/css/main.98504c1b.chunk.css.map": "/dev/static/css/main.98504c1b.chunk.css.map",
+    "static/js/2.644be4e5.chunk.js.LICENSE.txt": "/dev/static/js/2.644be4e5.chunk.js.LICENSE.txt",
+    "static/media/CV.scss": "/dev/static/media/SourceSansPro-SemiBold.83476a89.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.109066a9.js",
+    "static/js/2.644be4e5.chunk.js",
+    "static/css/main.98504c1b.chunk.css",
+    "static/js/main.7cfb8cde.chunk.js"
+  ]
+}
