@@ -1,0 +1,58 @@
+@import '../fonts/fonts-globals.scss';
+
+.cv {
+    @extend %rubric-styles;
+    text-align: center;
+}
+.cv-link {
+    @extend %link-buttons;
+}
+
+@media (max-width: 1024px) {
+    .cv-link {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cv {
+        font-size: 32px;
+        line-height: 45px;
+        a {
+            font-size: 24px;
+            width: 240px;
+            height: 45px;
+        }
+    }  
+}
+
+@media (max-width: 823px) {
+    .cv {
+        font-size: 25px;
+        line-height: 35px;
+        a {
+            font-size: 18px;
+            width: 200px;
+            height: 35px;
+        }
+    }  
+}
+
+@media (min-width: 565px) and (max-width: 568px) {
+    .cv-link {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 414px) {
+    .cv {
+        a {
+            font-size: 18px;
+            width: 150px;
+            height: 35px;
+        }
+    }  
+    .cv-link {
+        margin-top: 15px;
+    }
+}

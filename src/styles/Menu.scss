@@ -1,0 +1,80 @@
+@import '../fonts/fonts-globals.scss';
+
+.menu-logo {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    div {
+        display: flex;
+        align-items: center;
+    }
+    span {
+        margin-left: 6px;
+        color: $color-white;
+        font-weight: 900;
+        height: 100%;
+        display: block;
+    }
+    // &:hover .logo-left {
+    //     border-top: 1px solid transparent;
+    //     border-bottom: 1px solid $color-white;
+    // }
+    // &:hover .logo-right {
+    //     border-top: 1px solid $color-white;
+    //     border-bottom: 1px solid transparent;
+    // }
+}
+// .logo-left {
+//     width: 16px;
+//     height: 16px;
+//     border-left: 1px solid $color-white;
+//     border-top: 1px solid $color-white;
+//     margin-right: 15px;
+//     transition: 0.2s ease;
+// }
+// .logo-right {
+//     width: 16px;
+//     height: 16px;
+//     border-right: 1px solid $color-white;
+//     border-bottom: 1px solid $color-white;
+//     margin-left: 15px;
+//     transition: 0.2s ease;
+// }
+.menu {
+    @extend %menu;
+    padding-top: 30px;
+}
+.menu-items {
+    display: flex;
+    margin-left: auto;
+}
+.menu-item {
+    @extend %menu-item;
+    padding: 0 15px;
+    &:nth-child(4) {
+        padding-right: 0;
+    }
+    & .active {
+        border-left: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+        padding: 0 15px;
+    }
+}
+.menu-link {
+    @extend %menu-link;
+}
+@media (min-width: 568px) {
+    .menu {
+        display: flex;
+    } 
+}
+@media (max-width: 567px) {
+    .menu-items {
+        display: none;
+    }  
+}

@@ -1,0 +1,86 @@
+@import '../fonts/fonts-globals.scss';
+
+.skills {
+    @extend %rubric-styles;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    font-size: 18px;
+}
+.skills-item {
+    display: flex;
+    padding-left: 30%;
+    align-items: center;
+}
+.icon-wrapper {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+}
+.skills-icon {
+    width: 100%;
+    height: 100%;
+}
+.skill-text {
+    line-height: 0;
+}
+
+@media (max-width: 1140px) {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0;
+    }
+    .skills-item {
+        padding-left: 35%;
+    }
+    .skill-text {
+        font-size: 14px;  
+    }
+    .icon-wrapper {
+        width: 16px;
+        height: 16px;
+        margin-right: 15px;
+    }
+} 
+
+@media (min-width: 568px) and (max-width: 825px) {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+    }
+    .skill-text {
+        font-size: 14px;  
+    }
+    .icon-wrapper {
+        width: 16px;
+        height: 16px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .skills-item {
+        padding-left: 32%;
+    } 
+}
+
+@media (max-width: 400px) {
+    .skills-item {
+        padding-left: 28%;
+    }
+}
+
+@media (max-width: 320px) {
+    .skills-item {
+        padding-left: 25%;
+    }
+}
+

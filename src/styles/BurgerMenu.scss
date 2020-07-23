@@ -1,0 +1,73 @@
+@import '../fonts/fonts-globals.scss';
+
+.burger {
+    @extend %menu;
+}
+.burger-items {
+    display: flex;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border: 1px solid $color-white;
+    border-radius: 5px;
+    background-color: $color-black;
+    animation: moveright .5s ease;
+}
+.burger-item {
+    @extend %menu-item;
+    padding: 5px 15px;
+    &:nth-child(2) {
+        margin: 0 15px;  
+    }
+}
+.burger-link {
+    @extend %menu-link;
+    display: block;   
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0 15px;
+    &.active {
+        border-left: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+    }
+}
+.burger-wrapper {
+    margin-left: auto;
+    position: relative;
+    display: none;
+    img { 
+        width: 26px;
+        height: 26px;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        right: -450%;
+    }
+    100% {
+        right: 0; 
+    }
+}
+
+@media (min-width: 0px) and (max-width: 567px) {
+    .burger-wrapper {
+        display: flex;
+    }  
+    .burger-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+    .burger-item:nth-child(2) {
+        margin: 0;
+    }
+    .burger-link {
+        font-size: 16px;
+    }
+    .burger-item {
+        padding: 5px 0px;
+    }
+}

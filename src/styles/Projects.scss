@@ -1,0 +1,12 @@
+@import '../fonts/fonts-globals.scss';
+
+.projects {
+    @extend %rubric-styles;
+}
+
+.worldwide {
+    @extend %link-buttons;
+    width: 250px;
+    margin-top: 0;
+}
+
